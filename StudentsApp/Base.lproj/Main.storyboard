@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="vde-NW-qRy" kind="relationship" relationship="rootViewController" id="jMe-zH-gsr"/>
+                        <segue destination="vde-NW-qRy" kind="relationship" relationship="rootViewController" id="M6r-tJ-TXl"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gBz-mh-PYZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -123,6 +123,18 @@
                             <constraint firstItem="ZX9-Qy-mWK" firstAttribute="leading" secondItem="D9b-PC-JTU" secondAttribute="leading" id="Z58-jZ-VS4"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="PjG-C1-VtP">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="SfJ-Q8-2FF">
+                            <connections>
+                                <action selector="cancelButtonAction:" destination="7Je-LN-D4v" id="JPS-GO-VHx"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="sJY-x9-ITH">
+                            <connections>
+                                <action selector="saveButtonAction:" destination="7Je-LN-D4v" id="d6C-CR-Deb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="nameTable" destination="ZX9-Qy-mWK" id="EHO-XH-gX6"/>
                     </connections>
