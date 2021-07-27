@@ -18,6 +18,7 @@
 		BF089B3626B02E860057C623 /* listOfStudents.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF089B3526B02E860057C623 /* listOfStudents.swift */; };
 		BF089B3826B0305A0057C623 /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF089B3726B0305A0057C623 /* StudentsViewController.swift */; };
 		BF089B3A26B038F40057C623 /* StudentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF089B3926B038F40057C623 /* StudentDetailsViewController.swift */; };
+		BF089B3C26B03B2A0057C623 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF089B3B26B03B2A0057C623 /* TextFieldTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		BF089B3526B02E860057C623 /* listOfStudents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listOfStudents.swift; sourceTree = "<group>"; };
 		BF089B3726B0305A0057C623 /* StudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
 		BF089B3926B038F40057C623 /* StudentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailsViewController.swift; sourceTree = "<group>"; };
+		BF089B3B26B03B2A0057C623 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				BF089B0526AEE39F0057C623 /* SceneDelegate.swift */,
 				BF089B3326B02C970057C623 /* Student.swift */,
 				BF089B3926B038F40057C623 /* StudentDetailsViewController.swift */,
+				BF089B3B26B03B2A0057C623 /* TextFieldTableViewCell.swift */,
 				BF089B3726B0305A0057C623 /* StudentsViewController.swift */,
 				BF089B0926AEE39F0057C623 /* Main.storyboard */,
 				BF089B3526B02E860057C623 /* listOfStudents.swift */,
@@ -269,6 +272,7 @@
 			files = (
 				BF089B0426AEE39F0057C623 /* AppDelegate.swift in Sources */,
 				BF089B3426B02C970057C623 /* Student.swift in Sources */,
+				BF089B3C26B03B2A0057C623 /* TextFieldTableViewCell.swift in Sources */,
 				BF089B3626B02E860057C623 /* listOfStudents.swift in Sources */,
 				BF089B3826B0305A0057C623 /* StudentsViewController.swift in Sources */,
 				BF089B0626AEE39F0057C623 /* SceneDelegate.swift in Sources */,
