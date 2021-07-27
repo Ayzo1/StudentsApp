@@ -83,6 +83,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="studentsTableView" destination="UDl-ZD-rDh" id="WQQ-6L-Wl0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6R-6F-jsd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -136,6 +139,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="cancelButton" destination="SfJ-Q8-2FF" id="sfc-wj-n8L"/>
                         <outlet property="nameTable" destination="ZX9-Qy-mWK" id="EHO-XH-gX6"/>
                     </connections>
                 </viewController>

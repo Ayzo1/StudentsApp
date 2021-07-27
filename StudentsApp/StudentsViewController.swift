@@ -9,6 +9,7 @@ class StudentsViewController: UIViewController, UITableViewDataSource, UITableVi
         navigationController?.pushViewController(studentDetailsViewController, animated: true)
     }
     
+    @IBOutlet weak var studentsTableView: UITableView!
     var listOfStudents: ListOfStudents = ListOfStudents(studentsArray:
         [
             Student(firstName: "Ivan", lastName: "Ivanov", score: 5),
@@ -42,5 +43,10 @@ class StudentsViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         navigationItem.title = "Students"
         navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        studentsTableView.reloadData()
     }
 }
