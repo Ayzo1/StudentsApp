@@ -1,6 +1,6 @@
 import UIKit
 
-class StudentsViewController: UIViewController, UITableViewDataSource {
+class StudentsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var listOfStudents: ListOfStudents = ListOfStudents(studentsArray:
         [
@@ -22,7 +22,15 @@ class StudentsViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let studentDetailsViewController = storyboard.instantiateViewController(identifier: "StudentDetailsViewController") as! StudentDetailsViewController
+        let student = listOfStudents[indexPath.row]
+        studentDetailsViewController.student = student
+        navigationController?.pushViewController(studentDetailsViewController, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Students"

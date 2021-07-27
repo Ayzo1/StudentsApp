@@ -63,6 +63,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="vde-NW-qRy" id="exo-Ta-c6Q"/>
+                                    <outlet property="delegate" destination="vde-NW-qRy" id="tvE-H7-oWQ"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -80,6 +81,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6R-6F-jsd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-113" y="12"/>
+        </scene>
+        <!--Student Details View Controller-->
+        <scene sceneID="c6w-9G-UAZ">
+            <objects>
+                <viewController storyboardIdentifier="StudentDetailsViewController" id="7Je-LN-D4v" customClass="StudentDetailsViewController" customModule="StudentsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bwb-t0-J5T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ZX9-Qy-mWK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NameCell" id="Rbc-dT-KA6">
+                                        <rect key="frame" x="0.0" y="49.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rbc-dT-KA6" id="Oxd-wU-vdp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7Je-LN-D4v" id="9ZV-zt-KW4"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="D9b-PC-JTU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D9b-PC-JTU" firstAttribute="bottom" secondItem="ZX9-Qy-mWK" secondAttribute="bottom" id="0Na-j2-JEW"/>
+                            <constraint firstItem="ZX9-Qy-mWK" firstAttribute="top" secondItem="D9b-PC-JTU" secondAttribute="top" id="7pb-hC-mBw"/>
+                            <constraint firstItem="D9b-PC-JTU" firstAttribute="trailing" secondItem="ZX9-Qy-mWK" secondAttribute="trailing" id="Kfe-1B-WhU"/>
+                            <constraint firstItem="ZX9-Qy-mWK" firstAttribute="leading" secondItem="D9b-PC-JTU" secondAttribute="leading" id="Z58-jZ-VS4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameTable" destination="ZX9-Qy-mWK" id="EHO-XH-gX6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IXf-Yi-tan" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614" y="11"/>
         </scene>
     </scenes>
     <resources>
