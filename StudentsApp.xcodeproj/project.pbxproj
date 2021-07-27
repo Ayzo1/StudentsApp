@@ -16,6 +16,7 @@
 		BF089B2626AEE3A60057C623 /* StudentsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF089B2526AEE3A60057C623 /* StudentsAppUITests.swift */; };
 		BF089B3426B02C970057C623 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF089B3326B02C970057C623 /* Student.swift */; };
 		BF089B3626B02E860057C623 /* listOfStudents.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF089B3526B02E860057C623 /* listOfStudents.swift */; };
+		BF089B3826B0305A0057C623 /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF089B3726B0305A0057C623 /* StudentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BF089B2726AEE3A60057C623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF089B3326B02C970057C623 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		BF089B3526B02E860057C623 /* listOfStudents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listOfStudents.swift; sourceTree = "<group>"; };
+		BF089B3726B0305A0057C623 /* StudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				BF089B0326AEE39F0057C623 /* AppDelegate.swift */,
 				BF089B0526AEE39F0057C623 /* SceneDelegate.swift */,
 				BF089B3326B02C970057C623 /* Student.swift */,
+				BF089B3726B0305A0057C623 /* StudentsViewController.swift */,
 				BF089B0926AEE39F0057C623 /* Main.storyboard */,
 				BF089B3526B02E860057C623 /* listOfStudents.swift */,
 				BF089B0C26AEE3A60057C623 /* Assets.xcassets */,
@@ -264,6 +267,7 @@
 				BF089B0426AEE39F0057C623 /* AppDelegate.swift in Sources */,
 				BF089B3426B02C970057C623 /* Student.swift in Sources */,
 				BF089B3626B02E860057C623 /* listOfStudents.swift in Sources */,
+				BF089B3826B0305A0057C623 /* StudentsViewController.swift in Sources */,
 				BF089B0626AEE39F0057C623 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
