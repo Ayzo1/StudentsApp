@@ -30,7 +30,7 @@ class StudentDetailsViewController: UIViewController, UITableViewDataSource {
         for i in 0...2 {
             let cell = nameTable.cellForRow(at: IndexPath(row: i, section: 0)) as! TextFieldTableViewCell
             let text = cell.textField.text!
-            let reg = "^[a-zA-Z]+$"
+            let reg = "^[a-zA-Zа-яА-Я]+$"
             switch i{
             case 0:
                 if((text.range(of: reg, options: .regularExpression)) == nil){
