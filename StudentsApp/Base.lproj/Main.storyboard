@@ -76,7 +76,13 @@
                             <constraint firstItem="UDl-ZD-rDh" firstAttribute="top" secondItem="5uz-aS-NuU" secondAttribute="top" id="gVs-FS-nA6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="bIv-KT-lKk"/>
+                    <navigationItem key="navigationItem" id="bIv-KT-lKk">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="q6h-uW-aZ9">
+                            <connections>
+                                <action selector="addButtonAction:" destination="vde-NW-qRy" id="E7P-Hx-lck"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6R-6F-jsd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

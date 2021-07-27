@@ -29,6 +29,7 @@ class StudentDetailsViewController: UIViewController, UITableViewDataSource {
     
 
     var student: Student = Student(firstName: "", lastName: "", score: 0)
+    var students: ListOfStudents?
     override func viewDidLoad() {
         super.viewDidLoad()
         nameTable.register(TextFieldTableViewCell.self, forCellReuseIdentifier: "NameCell")

@@ -2,6 +2,13 @@ import UIKit
 
 class StudentsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBAction func addButtonAction(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let studentDetailsViewController = storyboard.instantiateViewController(identifier: "StudentDetailsViewController") as! StudentDetailsViewController
+        studentDetailsViewController.students = listOfStudents
+        navigationController?.pushViewController(studentDetailsViewController, animated: true)
+    }
+    
     var listOfStudents: ListOfStudents = ListOfStudents(studentsArray:
         [
             Student(firstName: "Ivan", lastName: "Ivanov", score: 5),
