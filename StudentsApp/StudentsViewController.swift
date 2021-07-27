@@ -25,5 +25,7 @@ class StudentsViewController: UIViewController, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Students"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
